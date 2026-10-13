@@ -127,8 +127,6 @@ See [all run controls and outputs](docs/reproducibility.md).
 
 ## Author and citation
 
-**YOUR_NAME** · [Kaggle](https://www.kaggle.com/YOUR_KAGGLE_USERNAME) · [GitHub](https://github.com/YOUR_GITHUB_USERNAME)
 
-If you use the models, cite their original authors (see [Credits](#credits)). If you use this packaging, the audit, or the insights, cite this repository as well. GitHub's **Cite this repository** menu provides metadata for both.
 
 Code is released under the [Apache License 2.0](LICENSE). Competition data, model weights, and linked third-party work keep their own terms.
