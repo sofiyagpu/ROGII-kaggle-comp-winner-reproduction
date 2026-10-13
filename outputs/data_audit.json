@@ -1,0 +1,1034 @@
+{
+  "dataset_path": "data",
+  "training_wells": 773,
+  "test_wells": 3,
+  "training_rows": 5092255,
+  "training_prediction_rows": 3783989,
+  "overall_missing_gr_fraction": 0.29613049621434906,
+  "missing_values_by_training_column": {
+    "MD": 0,
+    "X": 0,
+    "Y": 0,
+    "Z": 0,
+    "ANCC": 45634,
+    "ASTNU": 0,
+    "ASTNL": 0,
+    "EGFDU": 0,
+    "EGFDL": 6067,
+    "BUDA": 0,
+    "TVT": 0,
+    "GR": 1507972,
+    "TVT_input": 3783989
+  },
+  "known_prefix_violations": [],
+  "nonincreasing_md_wells": [],
+  "distributions": {
+    "known_rows_per_well": {
+      "min": 851,
+      "median": 1703.0,
+      "p90": 1945.0,
+      "max": 2392
+    },
+    "maximum_structure_step": {
+      "min": 0.05999999999949068,
+      "median": 0.7300000000013824,
+      "p90": 3.817999999999666,
+      "max": 152.3799999999992
+    },
+    "missing_gr_fraction_per_well": {
+      "min": 0.006527221480492508,
+      "median": 0.2770378263185935,
+      "p90": 0.554179212104517,
+      "max": 0.800989010989011
+    },
+    "rows_per_well": {
+      "min": 2058,
+      "median": 6576.0,
+      "p90": 8056.400000000001,
+      "max": 12141
+    },
+    "start_x": {
+      "min": 2859764.17,
+      "median": 2986891.51,
+      "p90": 3014888.614,
+      "max": 3037456.72
+    },
+    "start_y": {
+      "min": 1007175.5,
+      "median": 1082151.35,
+      "p90": 1119285.804,
+      "max": 1136946.69
+    },
+    "suffix_end_minus_last_known_tvt": {
+      "min": -103.78000000000065,
+      "median": 1.3999999999996362,
+      "p90": 22.689999999999426,
+      "max": 89.73999999999978
+    },
+    "suffix_tvt_std": {
+      "min": 1.0074003361086006,
+      "median": 6.909011953041515,
+      "p90": 13.113917865484735,
+      "max": 33.53381438026452
+    },
+    "tvt_plus_z_minus_ancc_within_well_range": {
+      "min": 0.030000000002473826,
+      "median": 0.05000000000291038,
+      "p90": 0.06000000000130967,
+      "max": 0.07000000000334694
+    }
+  },
+  "unique_typewell_files": 752,
+  "duplicate_typewell_groups": [
+    [
+      "02e7fe5a",
+      "10b89021",
+      "3417285d",
+      "6ae68655",
+      "7993a768",
+      "bc4381e2",
+      "ecdab904",
+      "f021b650",
+      "f49fdea3",
+      "f88ddb26"
+    ],
+    [
+      "071d7b45",
+      "4463446c"
+    ],
+    [
+      "25939962",
+      "8050c789"
+    ],
+    [
+      "2f8e53c3",
+      "91db7070"
+    ],
+    [
+      "75cd5f11",
+      "be83e781"
+    ],
+    [
+      "7b38844c",
+      "ed6e6e54"
+    ],
+    [
+      "89f1085d",
+      "aed44918"
+    ],
+    [
+      "8b95d6d1",
+      "a2e8e7f6"
+    ],
+    [
+      "a4f989c2",
+      "d011f41b"
+    ],
+    [
+      "add9c322",
+      "cbe62450"
+    ],
+    [
+      "b977be4a",
+      "c908edd0"
+    ],
+    [
+      "cd7f1687",
+      "fcfcc902"
+    ],
+    [
+      "f321a31c",
+      "fa667be2"
+    ]
+  ],
+  "duplicate_horizontal_feature_groups": [],
+  "train_test_public_feature_overlap": [
+    {
+      "test_well_id": "000d7d20",
+      "matching_train_well_ids": [
+        "000d7d20"
+      ]
+    },
+    {
+      "test_well_id": "00bbac68",
+      "matching_train_well_ids": [
+        "00bbac68"
+      ]
+    },
+    {
+      "test_well_id": "00e12e8b",
+      "matching_train_well_ids": [
+        "00e12e8b"
+      ]
+    }
+  ],
+  "overlap_policy": "Overlap is diagnostic only. Never copy train labels to test. Evaluate complete held-out wells; group duplicates when fitting models.",
+  "validation": {
+    "split": "sorted well files shuffled with Python random.Random(seed); first development_wells for development, next validation_wells for independent evaluation",
+    "seed": 42,
+    "development": {
+      "wells": 20,
+      "well_ids": [
+        "1b1eba53",
+        "2364716c",
+        "373ef48b",
+        "404c4384",
+        "5567d551",
+        "58850d2c",
+        "660d9546",
+        "6767c111",
+        "67847288",
+        "796dbd4c",
+        "7c607683",
+        "7cbbd047",
+        "7e721392",
+        "8bda1a11",
+        "93209a3d",
+        "b38e3116",
+        "c59b6c4a",
+        "ea0b99b7",
+        "ec0d597b",
+        "ec13af42"
+      ],
+      "prediction_rows": 108795,
+      "pooled_rmse": {
+        "last_known_tvt": 21.569985709104408,
+        "shrunk_geometry": 20.475337296243243
+      },
+      "per_well": [
+        {
+          "well_id": "1b1eba53",
+          "prediction_rows": 4655,
+          "last_known_tvt_rmse": 70.63937461968058,
+          "shrunk_geometry_rmse": 43.64174007127015
+        },
+        {
+          "well_id": "2364716c",
+          "prediction_rows": 4316,
+          "last_known_tvt_rmse": 19.668009235301668,
+          "shrunk_geometry_rmse": 12.376159355290337
+        },
+        {
+          "well_id": "373ef48b",
+          "prediction_rows": 3509,
+          "last_known_tvt_rmse": 5.207191387759596,
+          "shrunk_geometry_rmse": 8.217333394150096
+        },
+        {
+          "well_id": "404c4384",
+          "prediction_rows": 911,
+          "last_known_tvt_rmse": 3.6011694039210935,
+          "shrunk_geometry_rmse": 3.95125117216493
+        },
+        {
+          "well_id": "5567d551",
+          "prediction_rows": 6889,
+          "last_known_tvt_rmse": 10.289492216812466,
+          "shrunk_geometry_rmse": 8.56214088723032
+        },
+        {
+          "well_id": "58850d2c",
+          "prediction_rows": 4995,
+          "last_known_tvt_rmse": 14.887955622671049,
+          "shrunk_geometry_rmse": 7.886148877073531
+        },
+        {
+          "well_id": "660d9546",
+          "prediction_rows": 4732,
+          "last_known_tvt_rmse": 9.433757519583331,
+          "shrunk_geometry_rmse": 12.262399413444928
+        },
+        {
+          "well_id": "6767c111",
+          "prediction_rows": 6783,
+          "last_known_tvt_rmse": 17.475154063370617,
+          "shrunk_geometry_rmse": 14.190510842338249
+        },
+        {
+          "well_id": "67847288",
+          "prediction_rows": 7429,
+          "last_known_tvt_rmse": 11.461290028070946,
+          "shrunk_geometry_rmse": 31.39457545182473
+        },
+        {
+          "well_id": "796dbd4c",
+          "prediction_rows": 6248,
+          "last_known_tvt_rmse": 4.867507118040292,
+          "shrunk_geometry_rmse": 4.508466874460413
+        },
+        {
+          "well_id": "7c607683",
+          "prediction_rows": 5328,
+          "last_known_tvt_rmse": 16.864753655466934,
+          "shrunk_geometry_rmse": 32.68396551576542
+        },
+        {
+          "well_id": "7cbbd047",
+          "prediction_rows": 5121,
+          "last_known_tvt_rmse": 12.532698729088265,
+          "shrunk_geometry_rmse": 11.206779812387678
+        },
+        {
+          "well_id": "7e721392",
+          "prediction_rows": 6174,
+          "last_known_tvt_rmse": 40.331826473951956,
+          "shrunk_geometry_rmse": 42.12600141654277
+        },
+        {
+          "well_id": "8bda1a11",
+          "prediction_rows": 5981,
+          "last_known_tvt_rmse": 12.860573075338545,
+          "shrunk_geometry_rmse": 11.475035187705831
+        },
+        {
+          "well_id": "93209a3d",
+          "prediction_rows": 4697,
+          "last_known_tvt_rmse": 13.65809981076041,
+          "shrunk_geometry_rmse": 16.735056482235304
+        },
+        {
+          "well_id": "b38e3116",
+          "prediction_rows": 6211,
+          "last_known_tvt_rmse": 6.404438939196513,
+          "shrunk_geometry_rmse": 10.39521716182928
+        },
+        {
+          "well_id": "c59b6c4a",
+          "prediction_rows": 5499,
+          "last_known_tvt_rmse": 20.952603428128082,
+          "shrunk_geometry_rmse": 20.12783260643146
+        },
+        {
+          "well_id": "ea0b99b7",
+          "prediction_rows": 9239,
+          "last_known_tvt_rmse": 12.15975654126152,
+          "shrunk_geometry_rmse": 9.241082748085786
+        },
+        {
+          "well_id": "ec0d597b",
+          "prediction_rows": 4616,
+          "last_known_tvt_rmse": 16.44325138720608,
+          "shrunk_geometry_rmse": 19.866847239601842
+        },
+        {
+          "well_id": "ec13af42",
+          "prediction_rows": 5462,
+          "last_known_tvt_rmse": 10.906432170405786,
+          "shrunk_geometry_rmse": 10.364293956147625
+        }
+      ]
+    },
+    "evaluation": {
+      "wells": 100,
+      "well_ids": [
+        "00e12e8b",
+        "0390d174",
+        "03a935ae",
+        "044af7d1",
+        "05948241",
+        "06df5958",
+        "0955cd6c",
+        "0be01c24",
+        "0dd99dc5",
+        "10a1281a",
+        "12203f2a",
+        "1590af81",
+        "177622d7",
+        "1a730ac2",
+        "1e5e3573",
+        "1fdbba44",
+        "201661b5",
+        "25939962",
+        "2ddad940",
+        "32fe84c9",
+        "3a223519",
+        "3a7dd95d",
+        "3aaa2b30",
+        "3bbe1f5d",
+        "3e011332",
+        "4121c517",
+        "42669188",
+        "44441e54",
+        "4463446c",
+        "4a335117",
+        "4ddde4c1",
+        "4f4afcc6",
+        "512943b2",
+        "52f1e77a",
+        "53f23031",
+        "57f05c51",
+        "5a63b5d1",
+        "62569ae3",
+        "63559d57",
+        "6d6d93af",
+        "71ccf778",
+        "726f3dc2",
+        "739a914f",
+        "79507629",
+        "7acda2df",
+        "82aab6d2",
+        "8382f4b6",
+        "8478df29",
+        "87695469",
+        "8c8348e8",
+        "8cc800b3",
+        "8f201368",
+        "999daf80",
+        "9b9e3b49",
+        "9dede370",
+        "a3518960",
+        "a622ce4d",
+        "a645da9a",
+        "a6ed2eff",
+        "a6f967fb",
+        "a7fc3e6b",
+        "a959858c",
+        "ae069086",
+        "ae35f33a",
+        "ae8959c3",
+        "b4d8dd4f",
+        "bd2c2f34",
+        "c2c4db09",
+        "c472c0b5",
+        "c593337f",
+        "cb879f40",
+        "cc08aa63",
+        "ce8399b7",
+        "d011f41b",
+        "d1ee630d",
+        "d3df146b",
+        "d40f61d5",
+        "d463e527",
+        "d6c320d9",
+        "d6dd7330",
+        "da2d4d7c",
+        "dd64382d",
+        "e2fc7745",
+        "e3b34f5b",
+        "e7c36e81",
+        "e9949a23",
+        "eafb863e",
+        "eba6605e",
+        "ebe69318",
+        "ecdaf714",
+        "ed6e6e54",
+        "edf885a3",
+        "eeda36f5",
+        "ef8e3ed0",
+        "efde6ac3",
+        "f07d7037",
+        "f140c2fa",
+        "f2d4c8c9",
+        "fa16d114",
+        "fde20ecf"
+      ],
+      "prediction_rows": 480272,
+      "pooled_rmse": {
+        "last_known_tvt": 15.328317484764913,
+        "shrunk_geometry": 16.47054056138713
+      },
+      "per_well": [
+        {
+          "well_id": "00e12e8b",
+          "prediction_rows": 4301,
+          "last_known_tvt_rmse": 7.924588942315889,
+          "shrunk_geometry_rmse": 10.5443543023431
+        },
+        {
+          "well_id": "0390d174",
+          "prediction_rows": 4411,
+          "last_known_tvt_rmse": 8.517417217402954,
+          "shrunk_geometry_rmse": 9.475162382874254
+        },
+        {
+          "well_id": "03a935ae",
+          "prediction_rows": 2786,
+          "last_known_tvt_rmse": 35.05448621305352,
+          "shrunk_geometry_rmse": 20.429869606158874
+        },
+        {
+          "well_id": "044af7d1",
+          "prediction_rows": 4519,
+          "last_known_tvt_rmse": 9.868136513863366,
+          "shrunk_geometry_rmse": 10.837961153142485
+        },
+        {
+          "well_id": "05948241",
+          "prediction_rows": 3879,
+          "last_known_tvt_rmse": 4.995769989509691,
+          "shrunk_geometry_rmse": 5.663233201602986
+        },
+        {
+          "well_id": "06df5958",
+          "prediction_rows": 3509,
+          "last_known_tvt_rmse": 3.0884860085517194,
+          "shrunk_geometry_rmse": 2.8081351699864543
+        },
+        {
+          "well_id": "0955cd6c",
+          "prediction_rows": 5195,
+          "last_known_tvt_rmse": 8.023088122545198,
+          "shrunk_geometry_rmse": 3.64965982303163
+        },
+        {
+          "well_id": "0be01c24",
+          "prediction_rows": 4738,
+          "last_known_tvt_rmse": 8.273369324203173,
+          "shrunk_geometry_rmse": 4.290759793519552
+        },
+        {
+          "well_id": "0dd99dc5",
+          "prediction_rows": 7342,
+          "last_known_tvt_rmse": 8.234632190411654,
+          "shrunk_geometry_rmse": 7.206929017875183
+        },
+        {
+          "well_id": "10a1281a",
+          "prediction_rows": 5609,
+          "last_known_tvt_rmse": 3.591185257385085,
+          "shrunk_geometry_rmse": 6.844291050561448
+        },
+        {
+          "well_id": "12203f2a",
+          "prediction_rows": 3261,
+          "last_known_tvt_rmse": 13.762320645487467,
+          "shrunk_geometry_rmse": 14.422172829904541
+        },
+        {
+          "well_id": "1590af81",
+          "prediction_rows": 3799,
+          "last_known_tvt_rmse": 5.560887269871239,
+          "shrunk_geometry_rmse": 5.435461891774909
+        },
+        {
+          "well_id": "177622d7",
+          "prediction_rows": 3154,
+          "last_known_tvt_rmse": 9.800349606500166,
+          "shrunk_geometry_rmse": 12.485395598075478
+        },
+        {
+          "well_id": "1a730ac2",
+          "prediction_rows": 4605,
+          "last_known_tvt_rmse": 16.350400725581075,
+          "shrunk_geometry_rmse": 12.799231999619217
+        },
+        {
+          "well_id": "1e5e3573",
+          "prediction_rows": 5480,
+          "last_known_tvt_rmse": 11.921759172625736,
+          "shrunk_geometry_rmse": 15.753519559037585
+        },
+        {
+          "well_id": "1fdbba44",
+          "prediction_rows": 4911,
+          "last_known_tvt_rmse": 5.835321753197851,
+          "shrunk_geometry_rmse": 12.593685711590123
+        },
+        {
+          "well_id": "201661b5",
+          "prediction_rows": 5955,
+          "last_known_tvt_rmse": 12.376074593108253,
+          "shrunk_geometry_rmse": 21.379584834041708
+        },
+        {
+          "well_id": "25939962",
+          "prediction_rows": 4319,
+          "last_known_tvt_rmse": 11.099661933822553,
+          "shrunk_geometry_rmse": 8.967696183015432
+        },
+        {
+          "well_id": "2ddad940",
+          "prediction_rows": 5331,
+          "last_known_tvt_rmse": 7.645816438023014,
+          "shrunk_geometry_rmse": 9.27551591480487
+        },
+        {
+          "well_id": "32fe84c9",
+          "prediction_rows": 6408,
+          "last_known_tvt_rmse": 22.250821979444407,
+          "shrunk_geometry_rmse": 46.254485528451
+        },
+        {
+          "well_id": "3a223519",
+          "prediction_rows": 4583,
+          "last_known_tvt_rmse": 9.401162306681243,
+          "shrunk_geometry_rmse": 3.1019801906390976
+        },
+        {
+          "well_id": "3a7dd95d",
+          "prediction_rows": 3072,
+          "last_known_tvt_rmse": 13.010388611275378,
+          "shrunk_geometry_rmse": 14.897553021181963
+        },
+        {
+          "well_id": "3aaa2b30",
+          "prediction_rows": 4711,
+          "last_known_tvt_rmse": 17.52023232899041,
+          "shrunk_geometry_rmse": 14.883227956122916
+        },
+        {
+          "well_id": "3bbe1f5d",
+          "prediction_rows": 6918,
+          "last_known_tvt_rmse": 10.572803005133604,
+          "shrunk_geometry_rmse": 15.641195207115771
+        },
+        {
+          "well_id": "3e011332",
+          "prediction_rows": 2723,
+          "last_known_tvt_rmse": 17.42146062278745,
+          "shrunk_geometry_rmse": 21.772378447911503
+        },
+        {
+          "well_id": "4121c517",
+          "prediction_rows": 3723,
+          "last_known_tvt_rmse": 11.223238561279206,
+          "shrunk_geometry_rmse": 9.251982607814472
+        },
+        {
+          "well_id": "42669188",
+          "prediction_rows": 4282,
+          "last_known_tvt_rmse": 23.030677799344762,
+          "shrunk_geometry_rmse": 16.16339233271391
+        },
+        {
+          "well_id": "44441e54",
+          "prediction_rows": 4357,
+          "last_known_tvt_rmse": 3.6689297503451086,
+          "shrunk_geometry_rmse": 3.0145964508551035
+        },
+        {
+          "well_id": "4463446c",
+          "prediction_rows": 3256,
+          "last_known_tvt_rmse": 18.86029305975226,
+          "shrunk_geometry_rmse": 17.291406075035386
+        },
+        {
+          "well_id": "4a335117",
+          "prediction_rows": 5015,
+          "last_known_tvt_rmse": 25.01473417971471,
+          "shrunk_geometry_rmse": 18.48601685463524
+        },
+        {
+          "well_id": "4ddde4c1",
+          "prediction_rows": 4472,
+          "last_known_tvt_rmse": 4.584881244279585,
+          "shrunk_geometry_rmse": 10.469936351189174
+        },
+        {
+          "well_id": "4f4afcc6",
+          "prediction_rows": 5645,
+          "last_known_tvt_rmse": 8.324204115356522,
+          "shrunk_geometry_rmse": 9.823531382175378
+        },
+        {
+          "well_id": "512943b2",
+          "prediction_rows": 5029,
+          "last_known_tvt_rmse": 4.032978673574936,
+          "shrunk_geometry_rmse": 5.724002466619987
+        },
+        {
+          "well_id": "52f1e77a",
+          "prediction_rows": 4442,
+          "last_known_tvt_rmse": 14.174880875648112,
+          "shrunk_geometry_rmse": 11.608278639383535
+        },
+        {
+          "well_id": "53f23031",
+          "prediction_rows": 8550,
+          "last_known_tvt_rmse": 10.667984070510432,
+          "shrunk_geometry_rmse": 5.4272981920559085
+        },
+        {
+          "well_id": "57f05c51",
+          "prediction_rows": 4771,
+          "last_known_tvt_rmse": 36.3244551404309,
+          "shrunk_geometry_rmse": 19.23911565280573
+        },
+        {
+          "well_id": "5a63b5d1",
+          "prediction_rows": 6217,
+          "last_known_tvt_rmse": 19.44924550712061,
+          "shrunk_geometry_rmse": 28.309134573771292
+        },
+        {
+          "well_id": "62569ae3",
+          "prediction_rows": 3588,
+          "last_known_tvt_rmse": 8.163464251076302,
+          "shrunk_geometry_rmse": 14.46157642977135
+        },
+        {
+          "well_id": "63559d57",
+          "prediction_rows": 4069,
+          "last_known_tvt_rmse": 5.894220519880757,
+          "shrunk_geometry_rmse": 6.3391798875884104
+        },
+        {
+          "well_id": "6d6d93af",
+          "prediction_rows": 3595,
+          "last_known_tvt_rmse": 32.195372520142506,
+          "shrunk_geometry_rmse": 34.74080088946018
+        },
+        {
+          "well_id": "71ccf778",
+          "prediction_rows": 2698,
+          "last_known_tvt_rmse": 5.388651839136806,
+          "shrunk_geometry_rmse": 4.587493299522141
+        },
+        {
+          "well_id": "726f3dc2",
+          "prediction_rows": 6723,
+          "last_known_tvt_rmse": 6.931383638655226,
+          "shrunk_geometry_rmse": 11.347932381372523
+        },
+        {
+          "well_id": "739a914f",
+          "prediction_rows": 5505,
+          "last_known_tvt_rmse": 13.540022100878758,
+          "shrunk_geometry_rmse": 13.204245397898505
+        },
+        {
+          "well_id": "79507629",
+          "prediction_rows": 5302,
+          "last_known_tvt_rmse": 12.57032003546627,
+          "shrunk_geometry_rmse": 8.792377955533862
+        },
+        {
+          "well_id": "7acda2df",
+          "prediction_rows": 3091,
+          "last_known_tvt_rmse": 13.841227690699123,
+          "shrunk_geometry_rmse": 13.153292403434522
+        },
+        {
+          "well_id": "82aab6d2",
+          "prediction_rows": 6140,
+          "last_known_tvt_rmse": 16.359385167102737,
+          "shrunk_geometry_rmse": 12.991148970285437
+        },
+        {
+          "well_id": "8382f4b6",
+          "prediction_rows": 4967,
+          "last_known_tvt_rmse": 35.957613544757436,
+          "shrunk_geometry_rmse": 32.60370803051308
+        },
+        {
+          "well_id": "8478df29",
+          "prediction_rows": 4857,
+          "last_known_tvt_rmse": 14.043024034272376,
+          "shrunk_geometry_rmse": 11.168058206906805
+        },
+        {
+          "well_id": "87695469",
+          "prediction_rows": 7003,
+          "last_known_tvt_rmse": 7.051593014629924,
+          "shrunk_geometry_rmse": 7.438358125126867
+        },
+        {
+          "well_id": "8c8348e8",
+          "prediction_rows": 3888,
+          "last_known_tvt_rmse": 6.541121071059431,
+          "shrunk_geometry_rmse": 3.324253207121572
+        },
+        {
+          "well_id": "8cc800b3",
+          "prediction_rows": 6576,
+          "last_known_tvt_rmse": 13.894631430456734,
+          "shrunk_geometry_rmse": 24.7902976660242
+        },
+        {
+          "well_id": "8f201368",
+          "prediction_rows": 6349,
+          "last_known_tvt_rmse": 31.179492905922075,
+          "shrunk_geometry_rmse": 55.58935996859944
+        },
+        {
+          "well_id": "999daf80",
+          "prediction_rows": 3564,
+          "last_known_tvt_rmse": 5.121625403452367,
+          "shrunk_geometry_rmse": 4.370554513891273
+        },
+        {
+          "well_id": "9b9e3b49",
+          "prediction_rows": 5118,
+          "last_known_tvt_rmse": 7.923721572593473,
+          "shrunk_geometry_rmse": 6.638061002202518
+        },
+        {
+          "well_id": "9dede370",
+          "prediction_rows": 6297,
+          "last_known_tvt_rmse": 18.676124657054373,
+          "shrunk_geometry_rmse": 16.067515379908663
+        },
+        {
+          "well_id": "a3518960",
+          "prediction_rows": 4967,
+          "last_known_tvt_rmse": 7.100675858286986,
+          "shrunk_geometry_rmse": 9.328978476184414
+        },
+        {
+          "well_id": "a622ce4d",
+          "prediction_rows": 6298,
+          "last_known_tvt_rmse": 14.236097814848375,
+          "shrunk_geometry_rmse": 14.005465683061582
+        },
+        {
+          "well_id": "a645da9a",
+          "prediction_rows": 5153,
+          "last_known_tvt_rmse": 8.951092580974047,
+          "shrunk_geometry_rmse": 7.384933426367235
+        },
+        {
+          "well_id": "a6ed2eff",
+          "prediction_rows": 5275,
+          "last_known_tvt_rmse": 8.632582794631363,
+          "shrunk_geometry_rmse": 6.867885311433726
+        },
+        {
+          "well_id": "a6f967fb",
+          "prediction_rows": 4670,
+          "last_known_tvt_rmse": 13.762814229045636,
+          "shrunk_geometry_rmse": 12.745181355554433
+        },
+        {
+          "well_id": "a7fc3e6b",
+          "prediction_rows": 4764,
+          "last_known_tvt_rmse": 18.149529358993682,
+          "shrunk_geometry_rmse": 17.118097723984427
+        },
+        {
+          "well_id": "a959858c",
+          "prediction_rows": 4404,
+          "last_known_tvt_rmse": 65.3586589908809,
+          "shrunk_geometry_rmse": 42.3019676208103
+        },
+        {
+          "well_id": "ae069086",
+          "prediction_rows": 4770,
+          "last_known_tvt_rmse": 14.585517424947831,
+          "shrunk_geometry_rmse": 19.621969921866988
+        },
+        {
+          "well_id": "ae35f33a",
+          "prediction_rows": 4450,
+          "last_known_tvt_rmse": 5.0951729458693835,
+          "shrunk_geometry_rmse": 5.694851828166615
+        },
+        {
+          "well_id": "ae8959c3",
+          "prediction_rows": 4518,
+          "last_known_tvt_rmse": 19.76800976672305,
+          "shrunk_geometry_rmse": 20.67463350793704
+        },
+        {
+          "well_id": "b4d8dd4f",
+          "prediction_rows": 4259,
+          "last_known_tvt_rmse": 17.098418824477594,
+          "shrunk_geometry_rmse": 12.836071562930245
+        },
+        {
+          "well_id": "bd2c2f34",
+          "prediction_rows": 9823,
+          "last_known_tvt_rmse": 5.663541608648027,
+          "shrunk_geometry_rmse": 7.026136293910177
+        },
+        {
+          "well_id": "c2c4db09",
+          "prediction_rows": 6039,
+          "last_known_tvt_rmse": 9.028322821306517,
+          "shrunk_geometry_rmse": 9.146131933495207
+        },
+        {
+          "well_id": "c472c0b5",
+          "prediction_rows": 3054,
+          "last_known_tvt_rmse": 8.28128095427446,
+          "shrunk_geometry_rmse": 4.932327427769955
+        },
+        {
+          "well_id": "c593337f",
+          "prediction_rows": 5208,
+          "last_known_tvt_rmse": 23.822334034025907,
+          "shrunk_geometry_rmse": 25.136280635749458
+        },
+        {
+          "well_id": "cb879f40",
+          "prediction_rows": 6315,
+          "last_known_tvt_rmse": 8.79643766880234,
+          "shrunk_geometry_rmse": 7.546220337102122
+        },
+        {
+          "well_id": "cc08aa63",
+          "prediction_rows": 3274,
+          "last_known_tvt_rmse": 12.988941242217614,
+          "shrunk_geometry_rmse": 15.79445242402401
+        },
+        {
+          "well_id": "ce8399b7",
+          "prediction_rows": 1615,
+          "last_known_tvt_rmse": 3.363562739626084,
+          "shrunk_geometry_rmse": 1.9108677828821725
+        },
+        {
+          "well_id": "d011f41b",
+          "prediction_rows": 2267,
+          "last_known_tvt_rmse": 10.86185548345431,
+          "shrunk_geometry_rmse": 10.642676263033643
+        },
+        {
+          "well_id": "d1ee630d",
+          "prediction_rows": 6290,
+          "last_known_tvt_rmse": 12.219780010195931,
+          "shrunk_geometry_rmse": 22.80994342568006
+        },
+        {
+          "well_id": "d3df146b",
+          "prediction_rows": 5787,
+          "last_known_tvt_rmse": 11.699339296254342,
+          "shrunk_geometry_rmse": 21.441414460994512
+        },
+        {
+          "well_id": "d40f61d5",
+          "prediction_rows": 4039,
+          "last_known_tvt_rmse": 4.553018133859985,
+          "shrunk_geometry_rmse": 4.334122662048181
+        },
+        {
+          "well_id": "d463e527",
+          "prediction_rows": 4767,
+          "last_known_tvt_rmse": 8.591154291112087,
+          "shrunk_geometry_rmse": 16.65567558010809
+        },
+        {
+          "well_id": "d6c320d9",
+          "prediction_rows": 5452,
+          "last_known_tvt_rmse": 11.20598215508914,
+          "shrunk_geometry_rmse": 10.974867785894277
+        },
+        {
+          "well_id": "d6dd7330",
+          "prediction_rows": 6193,
+          "last_known_tvt_rmse": 11.822832979899944,
+          "shrunk_geometry_rmse": 21.673338011681977
+        },
+        {
+          "well_id": "da2d4d7c",
+          "prediction_rows": 2114,
+          "last_known_tvt_rmse": 3.577194115348713,
+          "shrunk_geometry_rmse": 5.462420992633655
+        },
+        {
+          "well_id": "dd64382d",
+          "prediction_rows": 3124,
+          "last_known_tvt_rmse": 4.262126959206316,
+          "shrunk_geometry_rmse": 5.578627196456294
+        },
+        {
+          "well_id": "e2fc7745",
+          "prediction_rows": 3692,
+          "last_known_tvt_rmse": 13.341394284804746,
+          "shrunk_geometry_rmse": 10.430650371807806
+        },
+        {
+          "well_id": "e3b34f5b",
+          "prediction_rows": 5455,
+          "last_known_tvt_rmse": 10.347045761247115,
+          "shrunk_geometry_rmse": 9.081740895397271
+        },
+        {
+          "well_id": "e7c36e81",
+          "prediction_rows": 3531,
+          "last_known_tvt_rmse": 7.349841849963589,
+          "shrunk_geometry_rmse": 6.311587060508518
+        },
+        {
+          "well_id": "e9949a23",
+          "prediction_rows": 4559,
+          "last_known_tvt_rmse": 11.580872171010277,
+          "shrunk_geometry_rmse": 11.345238759588106
+        },
+        {
+          "well_id": "eafb863e",
+          "prediction_rows": 3568,
+          "last_known_tvt_rmse": 13.457858083605025,
+          "shrunk_geometry_rmse": 15.966198043999372
+        },
+        {
+          "well_id": "eba6605e",
+          "prediction_rows": 4410,
+          "last_known_tvt_rmse": 15.631712662756936,
+          "shrunk_geometry_rmse": 10.53072497181363
+        },
+        {
+          "well_id": "ebe69318",
+          "prediction_rows": 4976,
+          "last_known_tvt_rmse": 4.82532580993508,
+          "shrunk_geometry_rmse": 4.5901242041701185
+        },
+        {
+          "well_id": "ecdaf714",
+          "prediction_rows": 6592,
+          "last_known_tvt_rmse": 15.351875762973167,
+          "shrunk_geometry_rmse": 20.632729942131654
+        },
+        {
+          "well_id": "ed6e6e54",
+          "prediction_rows": 6048,
+          "last_known_tvt_rmse": 11.951935194527213,
+          "shrunk_geometry_rmse": 11.027884198106824
+        },
+        {
+          "well_id": "edf885a3",
+          "prediction_rows": 3117,
+          "last_known_tvt_rmse": 12.288723348140039,
+          "shrunk_geometry_rmse": 12.5324294708443
+        },
+        {
+          "well_id": "eeda36f5",
+          "prediction_rows": 4797,
+          "last_known_tvt_rmse": 5.470124457464137,
+          "shrunk_geometry_rmse": 5.633522152322639
+        },
+        {
+          "well_id": "ef8e3ed0",
+          "prediction_rows": 5224,
+          "last_known_tvt_rmse": 14.635089490374893,
+          "shrunk_geometry_rmse": 7.971844597152702
+        },
+        {
+          "well_id": "efde6ac3",
+          "prediction_rows": 4559,
+          "last_known_tvt_rmse": 10.202375669006345,
+          "shrunk_geometry_rmse": 13.280471681157666
+        },
+        {
+          "well_id": "f07d7037",
+          "prediction_rows": 5563,
+          "last_known_tvt_rmse": 7.496086797446274,
+          "shrunk_geometry_rmse": 6.052647436632894
+        },
+        {
+          "well_id": "f140c2fa",
+          "prediction_rows": 4082,
+          "last_known_tvt_rmse": 13.3161842942989,
+          "shrunk_geometry_rmse": 24.914592976452557
+        },
+        {
+          "well_id": "f2d4c8c9",
+          "prediction_rows": 6249,
+          "last_known_tvt_rmse": 4.229551942410153,
+          "shrunk_geometry_rmse": 6.43772283847066
+        },
+        {
+          "well_id": "fa16d114",
+          "prediction_rows": 5686,
+          "last_known_tvt_rmse": 20.815118518803075,
+          "shrunk_geometry_rmse": 11.204524868222911
+        },
+        {
+          "well_id": "fde20ecf",
+          "prediction_rows": 4667,
+          "last_known_tvt_rmse": 16.31905728866344,
+          "shrunk_geometry_rmse": 13.218545450011774
+        }
+      ]
+    }
+  }
+}

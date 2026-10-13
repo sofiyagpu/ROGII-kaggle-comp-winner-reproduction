@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this reproduction, cite this repository and the original solution authors listed under references."
+type: software
+title: "ROGII Wellbore Geology Prediction: Attributed Top-Solution Reproduction"
+authors:
+  - name: "YOUR_NAME"
+repository-code: "https://github.com/YOUR_GITHUB_USERNAME/rogii-wellbore-geology-reproduction"
+url: "https://www.kaggle.com/code/YOUR_KAGGLE_USERNAME/rogii-1st-place-reproduction-insights"
+license: Apache-2.0
+keywords:
+  - kaggle
+  - geosteering
+  - wellbore
+  - reproducibility
+references:
+  - type: software
+    title: "kaggle_ROGII_1st_place_solution_Ruby"
+    authors:
+      - name: "Ruby (w5833946)"
+    repository-code: "https://github.com/IAmAValidUsername/kaggle_ROGII_1st_place_solution_Ruby"
+    license: Apache-2.0
+  - type: software
+    title: "ROGII 2nd place weights"
+    authors:
+      - name: "bilzard (tatamikenn)"
+    url: "https://www.kaggle.com/datasets/tatamikenn/rogii-2nd-place-weights"
+    license: Apache-2.0

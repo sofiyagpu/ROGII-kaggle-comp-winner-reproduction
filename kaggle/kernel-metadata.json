@@ -1,0 +1,24 @@
+{
+  "id": "YOUR_KAGGLE_USERNAME/rogii-1st-place-reproduction-insights",
+  "title": "ROGII | 1st-Place Reproduction + Insights",
+  "code_file": "../notebooks/rogii_winner_reproduction.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "dataset_sources": [
+    "w5833946/rogii-0719-v1-cv509",
+    "w5833946/rogii-0724-v1-cv486",
+    "w5833946/rogii-0729-v3-cv553",
+    "w5833946/rogii-0801-v1-cv516",
+    "w5833946/rogii-0801-v2-cv480",
+    "w5833946/rogii-0803-v2-cv500"
+  ],
+  "competition_sources": [
+    "rogii-wellbore-geology-prediction"
+  ],
+  "kernel_sources": [],
+  "model_sources": []
+}
